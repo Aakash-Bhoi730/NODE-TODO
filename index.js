@@ -16,6 +16,7 @@ db.once("open", () => {
 app.use(bodyparser.json());
 
 app.use(`/api`, require("./routes/todo"));
+app.use(`/user`, require("./routes/user"));
 
 app.listen(9000, () => {
   console.log("server started");
